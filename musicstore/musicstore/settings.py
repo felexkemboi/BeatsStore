@@ -88,6 +88,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
     "allauth.account.context_processors.account",
     "allauth.socialaccount.context_processors.socialaccount",
+    "django.template.context_processors.media",
 )
  
 # auth and allauth settings
@@ -157,3 +158,5 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 """
+MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+MEDIA_URL='/media/'

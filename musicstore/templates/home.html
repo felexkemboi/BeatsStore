@@ -17,7 +17,7 @@
 			      <thead class="thead-inverse">
 			      <tr>
 			        <th>Name</th>
-			        <th>Category</th>
+			        <th>Genre</th>
 			        <th>Playback</th>
 			        <th>Purchase</th>
 			      </tr>
@@ -27,8 +27,13 @@
 			        {% for beat in beats %}
 			          <tr>
 			            <td class="align-middle">{{ beat.name }}</td>
-			            <td class="align-middle">{{ beat.category }}</td>
-			            <td class="align-middle">{{ beat.playback  }}</td>
+			            <td class="align-middle">{{ beat.genre }}</td>
+			            <td class="align-middle">
+			            	<audio controls>
+   								 <source src="{{ beat.playback.url }}" type="audio/mpeg">
+   								 	<p>Your browser does not support the audio element.</p>
+							</audio>
+						</td>
 			            <td class="align-middle"><a  href="#">Add to cart</a></td>
 			          </tr>
 			        {% endfor %}
@@ -43,3 +48,4 @@
 </div>
 
 {% endblock %}
+
