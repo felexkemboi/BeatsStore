@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row my-4" >
+    <div class="col-md-2">
+	       <h3>Producers</h3>
+	       {% for producer in producers %}
+	        <li><a href="#"> {{ producer }}</a></li>
+	       {% endfor %}
+	       <p><a href="#">List all</a></p>
+	</div>
+    <div class="col-md-8">
+	       <h3>Beats</h3>
+	       <!--<p>List of all the producers</p>-->
+	        <table class="table">
+			     <div class="breadcrumb-item">
+			      <thead class="thead-inverse">
+			      <tr>
+			        <th>Name</th>
+			        <th>Category</th>
+			        <th>Playback</th>
+			        <th>Purchase</th>
+			      </tr>
+			      </thead>
+			     </div>
+			      <tbody>
+			        {% for beat in beats %}
+			          <tr>
+			            <td class="align-middle">{{ beat.name }}</td>
+			            <td class="align-middle">{{ beat.category }}</td>
+			            <td class="align-middle">{{ beat.playback  }}</td>
+			            <td class="align-middle"><a  href="#">Add to cart</a></td>
+			          </tr>
+			        {% endfor %}
+			      </tbody>
+			</table>
+			<p><a  href="#">See all</a></p>
+	</div>
+	<div class="col-md-2">
+	       <h3>Comments</h3>
+	       <p>How can we serve you better  <a  href="#">See all</a></p>
+	</div>
+</div>
+
+{% endblock %}

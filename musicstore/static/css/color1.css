@@ -1,0 +1,107 @@
+.brand-text {
+    color: #88CC00 !important;
+}
+
+.brand-text i {
+    color: #88CC00 !important;
+}
+
+.brand-bg,
+.sweet-alert button {
+    background-color: #88CC00 !important;
+}
+
+.waves-effect.waves-brand  {
+    background-color: rgba(136, 204, 0, 0.0);
+}
+
+.p-overlay {
+    background-color: rgba(136, 204, 0, 0.5);
+}
+
+
+.circle-loader .path {
+    stroke: #88CC00;
+}
+
+
+.side-nav  li.current a,
+.side-nav  li a:hover {
+    border-bottom-color: #88CC00;
+}
+
+.static-menu li i:hover,
+.static-menu li a:hover,
+.submenu-ul li a:hover,
+.home-title span,
+.about-subtitle,
+.person-about > a.btn-large,
+.about-social ul li a i,
+.skill-title,
+.skill-count,
+.single-widget ul li a,
+.single-post-content a,
+.share-post li a:hover,
+.com-title a,
+span.num {
+    color: #88CC00;
+}
+
+.singel-hr-inner,
+.hr-wrap,
+.hrc:after,
+.thumb-slides-container.owl-theme .owl-controls .owl-page.active span,
+.blog-inner .card-content a.right:hover,
+.blog-inner .card-content a.right:focus,
+.contact-form .submit-btn:hover,
+.contact-form .submit-btn:focus,
+a.tags,
+.blog-inner .card-content a.right:active {
+    background-color: #88CC00;
+}
+
+.contact-form .materialize-textarea:focus,
+.contact-form .input-box:focus {
+    border-color: #88CC00;
+    box-shadow: 0px 1px 0px #88CC00;
+}
+
+
+.single-post-content blockquote {
+    border-left: 5px solid #88CC00;
+}
+
+
+
+@-webkit-keyframes color {
+    0%   {stroke: #88CC00;}
+    20%  {stroke: #88CC00;}
+    25%  {stroke: #88CC00;}
+    45%  {stroke: #88CC00;}
+    50%  {stroke: #88CC00;}
+    70%  {stroke: #88CC00;}
+    75%  {stroke: #88CC00;}
+    95%  {stroke: #88CC00;}
+}
+
+@keyframes color {
+    0%   {stroke: #88CC00;}
+    20%  {stroke: #88CC00;}
+    25%  {stroke: #88CC00;}
+    45%  {stroke: #88CC00;}
+    50%  {stroke: #88CC00;}
+    70%  {stroke: #88CC00;}
+    75%  {stroke: #88CC00;}
+    95%  {stroke: #88CC00;}
+}
+
+
+/* Add your CSS below */
+
+
+
+
+.menu-select [type="radio"]:checked + label:after {
+    border-color: #88CC00;
+    background-color: #88CC00;
+}

@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from beats import views
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('beats.urls')),
+    path('accounts/', include('allauth.urls')),
+    path('beats',    include('beats.urls')),
+    path('',  views.home, name = 'home')
 ]

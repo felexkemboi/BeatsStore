@@ -1,0 +1,105 @@
+.brand-text {
+    color: #799CAC !important;
+}
+
+.brand-text i {
+    color: #799CAC !important;
+}
+
+.brand-bg,
+.sweet-alert button {
+    background-color: #799CAC !important;
+}
+
+.waves-effect.waves-brand  {
+    background-color: rgba(121, 156, 172, 0.66);
+}
+
+.p-overlay {
+    background-color: rgba(121, 156, 172, 0.9);
+}
+
+
+.circle-loader .path {
+    stroke: #799CAC;
+}
+
+
+.side-nav  li.current a,
+.side-nav  li a:hover {
+    border-bottom-color: #799CAC;
+}
+
+.static-menu li i:hover,
+.static-menu li a:hover,
+.submenu-ul li a:hover,
+.home-title span,
+.about-subtitle,
+.person-about > a.btn-large,
+.about-social ul li a i,
+.skill-title,
+.skill-count,
+.single-widget ul li a,
+.single-post-content a,
+.share-post li a:hover,
+.com-title a,
+span.num {
+    color: #799CAC;
+}
+
+.singel-hr-inner,
+.hr-wrap,
+.hrc:after,
+.thumb-slides-container.owl-theme .owl-controls .owl-page.active span,
+.blog-inner .card-content a.right:hover,
+.blog-inner .card-content a.right:focus,
+.contact-form .submit-btn:hover,
+.contact-form .submit-btn:focus,
+a.tags,
+.blog-inner .card-content a.right:active {
+    background-color: #799CAC;
+}
+
+.contact-form .materialize-textarea:focus,
+.contact-form .input-box:focus {
+    border-color: #799CAC;
+    box-shadow: 0px 1px 0px #799CAC;
+}
+
+
+.single-post-content blockquote {
+    border-left: 5px solid #799CAC;
+}
+
+@-webkit-keyframes color {
+    0%   {stroke: #799CAC;}
+    20%  {stroke: #799CAC;}
+    25%  {stroke: #799CAC;}
+    45%  {stroke: #799CAC;}
+    50%  {stroke: #799CAC;}
+    70%  {stroke: #799CAC;}
+    75%  {stroke: #799CAC;}
+    95%  {stroke: #799CAC;}
+}
+
+@keyframes color {
+    0%   {stroke: #799CAC;}
+    20%  {stroke: #799CAC;}
+    25%  {stroke: #799CAC;}
+    45%  {stroke: #799CAC;}
+    50%  {stroke: #799CAC;}
+    70%  {stroke: #799CAC;}
+    75%  {stroke: #799CAC;}
+    95%  {stroke: #799CAC;}
+}
+
+
+/* Add your CSS below */
+
+
+
+
+.menu-select [type="radio"]:checked + label:after {
+    border-color: #799CAC;
+    background-color: #799CAC;
+}
