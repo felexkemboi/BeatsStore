@@ -1,22 +1,13 @@
 {% extends 'base.html' %}
 {% block breadcrumb %}
-<!--
-<ul class="row">
-  <li class="breadcrumb-item"><a href="#">Boards</a></li>
-  <li class="breadcrumb-item"><a href="#">nini</a></li>
-  <li class="breadcrumb-item active">New topic</li>
-</ul>
--->
+
 {% endblock %}
 
 {% block content %}
-<div class="row my-4" >
-    <div class="col-md-2">
-	       <h3>Producers</h3>
-	       {% for producer in producers %}
-	        <li><a href="#"> {{ producer }}</a></li>
-	       {% endfor %}
-	       <p><a href="#">List all</a></p>
+<div class="row" >
+	<div class="col-md-2">
+	       <h3>Producer Profile</h3>
+	       <p></p>
 	</div>
     <div class="col-md-8">
 	       <h3>Beats</h3>
@@ -52,9 +43,7 @@
 	</div>
 	<div class="col-md-2">
 	       <h3>Comments</h3>
-	       <p>How can we serve you better  <a  href="#">See all</a></p>
+	       <p>Say something about my production  <a  href="#">See other comments</a></p>
 	</div>
 </div>
-
 {% endblock %}
-

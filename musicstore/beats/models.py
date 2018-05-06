@@ -27,7 +27,8 @@ class Beat(models.Model):
 	name = models.CharField(max_length=25)
 	genre = models.CharField(max_length=25,choices=CHOICES)
 	playback = models.FileField(upload_to='media/')
-	producer = models.ForeignKey('Producer',on_delete=models.CASCADE),
+	producer = models.ForeignKey('Producer',on_delete = models.SET_NULL,null= True)
+	#book  =    models.ForeignKey('Book', on_delete = models.SET_NULL,null= True)
 
 	def __str__(self):
 		return self.name
