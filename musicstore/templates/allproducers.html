@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheet %}
+	<link rel="stylesheet" href="{% static 'css/mimi.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="row my-4 align-middle">
+    <div class="container">
+	       <h3 style="text-align: center;">Producers</h3>
+	        <table class="table">
+			     <div class="breadcrumb-item">
+			      <thead class="thead-inverse">
+			      <tr>
+			        <th>Name</th>
+			        <th>Number of beats</th>
+			        <th>Phone</th>
+			        <th>Email</th>
+			      </tr>
+			      </thead>
+			     </div>
+			      <tbody>
+			        {% for producer in producers %}
+			          <tr>
+			            <td class="align-middle"><a href="{% url 'producerbeats' producer.pk %}">{{ producer.username }}</a></td>
+			            <td class="align-middle">{{ producer.beats }}</td>
+			            <td class="align-middle">{{ producer.phone }}</td>
+			            <td class="align-middle">{{ producer.email }}</td>
+			          </tr>
+			        {% endfor %}
+			      </tbody>
+			</table>
+	</div>
+</div>
+{% endblock %}

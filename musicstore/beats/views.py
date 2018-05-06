@@ -15,5 +15,10 @@ def producerbeats(request,pk):
 	producer = get_object_or_404(Producer,pk=pk)
 	beats = Beat.objects.filter(producer = producer)
 	return render(request,'producerbeats.html',{'beats': beats})
+
+def allproducers(request):
+	producers = Producer.objects.all()
+	return render(request,'allproducers.html',{'producers':producers})
+
 	
 

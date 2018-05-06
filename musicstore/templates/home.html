@@ -14,9 +14,9 @@
     <div class="col-md-2">
 	       <h3>Producers</h3>
 	       {% for producer in producers %}
-	        <li><a href="#"> {{ producer }}</a></li>
+	        <li><a href="{% url 'producerbeats' producer.pk %}"> {{ producer }}</a></li>
 	       {% endfor %}
-	       <p><a href="#">List all</a></p>
+	       <p><h4><a href="{% url 'allproducers' %}">List all</a></h4></p>
 	</div>
     <div class="col-md-8">
 	       <h3>Beats</h3>
@@ -51,8 +51,8 @@
 			<p><a  href="#">See all</a></p>
 	</div>
 	<div class="col-md-2">
-	       <h3>Comments</h3>
-	       <p>How can we serve you better  <a  href="#">See all</a></p>
+	       <!--<h3>Comments</h3>-->
+	       <p><h5>Drop a comment</h5>  <a  href="#">See all</a></p>
 	</div>
 </div>
 
