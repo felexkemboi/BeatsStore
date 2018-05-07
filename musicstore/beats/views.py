@@ -25,22 +25,23 @@ def allbeats(request):
 	beats = Beat.objects.all()
 	return render(request,'allbeats.html',{'beats': beats})
 
-def addbeat(request):
+def addbeat(request,pk):
     #board = get_object_or_404(Board, pk=pk)
     #user = User.objects.first()  # TODO: get the currently logged in user
     if request.method == 'POST':
-        form = BeatForm(request.POST)
+        form = BeatForm(request.POST,request.FILES)
         if form.is_valid():
             beat = form.save(commit=False)
             #topic.board = board
-            user = request.user
+            producer = get_object_or_404(Producer,pk=pk)
             #form.save()
             beat = Beat.objects.create(
                 name=form.cleaned_data.get('name'),
                 genre=form.cleaned_data.get('genre'),
                 playback=form.cleaned_data.get('playback'),
-                producer = user
+                producer = producer
             )
+            beat.save()
             return redirect('allbeats')  # TODO: redirect to the created topic page
     else:
         form = BeatForm()

@@ -6,7 +6,8 @@
 <div class="row justify-content-center">
 <div class="col-lg-6 col-md-10 col-sm-12">
  <h2>Add Beat</h2>
-  <form method="post" enctype="multipart/form-data" action = "{% url 'allbeats' %}">
+ <!--action = "{% url 'allbeats' %}"-->
+  <form method="post" enctype="multipart/form-data" >
     {% csrf_token %}
 
     {% for hidden in form.hidden_fields %}

@@ -6,7 +6,7 @@ urlpatterns = [
     path('producers/',          views.allproducers,     name ='allproducers'),
     path('allbeats/',           views.allbeats,         name ='allbeats'),
     path('producers/<int:pk>/', views.producerbeats,    name ='producerbeats'),
-    path('addbeat/',            views.addbeat,          name ='addbeat'),
+    path('addbeat/<int:pk>/',   views.addbeat,          name ='addbeat'),
 ]
 
 
