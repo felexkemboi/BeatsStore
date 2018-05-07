@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-md-12" style="border-color: whitesmoke;">
+	       <h3>Beats</h3>
+	       <!--<p>List of all the producers</p>-->
+	        <table class="table">
+			     <div class="breadcrumb-item">
+			      <thead class="thead-inverse">
+			      <tr>
+			        <th>Name</th>
+			        <th>Genre</th>
+			        <th>Playback</th>
+			        <th>Purchase</th>
+			      </tr>
+			      </thead>
+			     </div>
+			      <tbody>
+			        {% for beat in beats %}
+			          <tr>
+			            <td class="align-middle">{{ beat.name }}</td>
+			            <td class="align-middle">{{ beat.genre }}</td>
+			            <td class="align-middle">
+			            	<audio controls>
+   								 <source src="{{ beat.playback.url }}" type="audio/mpeg">
+   								 	<p>Your browser does not support the audio element.</p>
+							</audio>
+						</td>
+			            <td class="align-middle"><a  href="#">Add to cart</a></td>
+			          </tr>
+			        {% endfor %}
+			      </tbody>
+			</table>
+		</div>
+{% endblock %}
