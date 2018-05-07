@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-md-12" style="border-color: whitesmoke;">
+	       <h3>Sessions</h3>
+	       <!--<p>List of all the producers</p>-->
+	        <table class="table">
+			     <div class="breadcrumb-item">
+			      <thead class="thead-inverse">
+			      <tr>
+			        <th>From</th>
+			        <th>To</th>
+			        <th>Type of service</th>
+			        <th>Contact</th>
+			      </tr>
+			      </thead>
+			     </div>
+			      <tbody>
+			        {% for session in  sessions %}
+			          <tr>
+			            <td class="align-middle">{{ session.from_date }}</td>
+			            <td class="align-middle">{{ session.from_date }}</td>
+			            <td class="align-middle">{{ session.service }}</td>
+			            <td class="align-middle">0{{ session.phone }} or 0{{ session.alternative_phone }}</td>
+			          </tr>
+			        {% endfor %}
+			      </tbody>
+			</table>
+		</div>
+{% endblock %}
