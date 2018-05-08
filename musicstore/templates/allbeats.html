@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
+{% load static  %}
 
 {% block content %}
-<div class="col-md-12" style="border-color: whitesmoke;">
+<div class="body2"> 
+<div class="col-md-12" >
 	       <h3>Beats</h3>
 	       <!--<p>List of all the producers</p>-->
 	        <table class="table">
@@ -11,6 +13,7 @@
 			        <th>Name</th>
 			        <th>Genre</th>
 			        <th>Playback</th>
+			        <th>Producer</th>
 			        <th>Purchase</th>
 			      </tr>
 			      </thead>
@@ -26,10 +29,12 @@
    								 	<p>Your browser does not support the audio element.</p>
 							</audio>
 						</td>
+						<td class="align-middle"><a href="#">{{ beat.producer }}</a></td>
 			            <td class="align-middle"><a  href="#">Add to cart</a></td>
 			          </tr>
 			        {% endfor %}
 			      </tbody>
 			</table>
 		</div>
+	</div>
 {% endblock %}

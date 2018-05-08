@@ -8,11 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Peralta" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    {% block stylesheet %}
+   {% block stylesheet %}
+     <style type="text/css">
+        .body2{ 
+        /*background: url('{% static "images/musica.jpeg" %}') /*no-repeat center center fixed;*/
+        /*-webkit-background-size: cover;
+        -moz-background-size: cover;
+         -o-background-size: cover;*/
+        /* background-size: cover;
+         background-size: 1800px 900px;
+         background-repeat: no-repeat;
+         background-position: top;
+        background-attachment: fixed;*/
+        background-color: whitesmoke;
+        }
+    </style>
+{% endblock%}
 
-    {% endblock %}
   </head>
-  <body>
+  <body class="body2">
     {% block body %}  
     <!-- HERE -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,11 +52,10 @@
 			</div>
 		</nav>
       <div class="container">
-        {% block breadcrumb %}
+        <!--{% block breadcrumb %}
             
-        {% endblock %}
-        <!--<ol class="breadcrumb my-4">-->
-  
+        {% endblock %}-->
+        <!--<ol class="breadcrumb my-4">--> 
         {% block content %}
         {% endblock %}
       </div>
