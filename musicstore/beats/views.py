@@ -12,7 +12,7 @@ def shop(request):
 	beats = Beat.objects.all()
 	producers = Producer.objects.all() #order_by('created_date')
 	#return render(request,'home.html', {'posts': posts,'ebooks':ebook,})
-	return render(request,'home.html',{'beats': beats,'producers':producers})
+	return render(request,'test.html',{'beats': beats,'producers':producers})
 
 def producerbeats(request,pk):
 	producer = get_object_or_404(Producer,pk=pk)
